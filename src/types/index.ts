@@ -9,19 +9,27 @@ export interface TeamMember {
   id: string
   name: string
   role: string
+  category: 'leader' | 'graduate' | 'undergraduate'
   bio: string
+  education?: string[]
+  research?: string
   image?: string
   email?: string
+  startYear?: number
 }
 
 export interface Publication {
   id: string
+  number: number
   title: string
-  authors: string[]
+  authors: string
   journal: string
   year: number
-  doi?: string
+  volume?: string
+  pages?: string
+  month?: string
   link?: string
+  status?: 'accepted' | 'submitted' | 'published'
 }
 
 export interface ResearchArea {

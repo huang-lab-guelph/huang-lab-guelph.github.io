@@ -1,20 +1,140 @@
 [
   {
-    "id": "1",
-    "date": "2024-01-15",
-    "title": "Welcome to the new Huang Lab website!",
-    "content": "We're excited to launch our new website with a modern design and improved accessibility."
+    "id": "news-25",
+    "date": "2025-10-12",
+    "title": "CSC-Pacifichem Travel Award",
+    "content": "Congratulations to Megan Black for being awarded the CSC-Pacifichem Travel Award!"
   },
   {
-    "id": "2",
-    "date": "2024-01-10",
-    "title": "New Publication in Nature Structural Biology",
-    "content": "Our latest research on protein complex dynamics has been published in Nature Structural Biology."
+    "id": "news-24",
+    "date": "2025-09-29",
+    "title": "Second Place at MOOT 36",
+    "content": "Peter Kim earned second place for his oral presentation at MOOT 36, held at Memorial University."
   },
   {
-    "id": "3",
-    "date": "2023-12-15",
-    "title": "Congratulations to Sarah on her scholarship!",
-    "content": "PhD student Sarah Chen has been awarded the prestigious NSERC CGS-D scholarship."
+    "id": "news-23",
+    "date": "2025-06-25",
+    "title": "Poster Awards at Canadian Chemistry Conference",
+    "content": "Congratulations to Megan Black and Paige Kanters on winning poster awards at this year's Canadian Chemistry Conference held in Ottawa!"
+  },
+  {
+    "id": "news-22",
+    "date": "2025-03-29",
+    "title": "SOUSCC 53 Presentations",
+    "content": "Undergraduate researchers Shaye Ryan, Emilie Carson, and Raji Raseekan presented at SOUSCC 53. Congratulations to Shaye for receiving a prize!"
+  },
+  {
+    "id": "news-21",
+    "date": "2025-02-25",
+    "title": "Master's Defense",
+    "content": "Congratulations to Nicole Dcosta for successfully defending her Master's thesis!"
+  },
+  {
+    "id": "news-20",
+    "date": "2024-10-24",
+    "title": "Success at MOOT 35",
+    "content": "Lab members presented at MOOT 35 at McGill University. Peter and Raji received top poster prizes, and Megan delivered an oral presentation."
+  },
+  {
+    "id": "news-19",
+    "date": "2024-07-31",
+    "title": "Good Samaritan Scholarship",
+    "content": "Congratulations to Nicole Dcosta for being awarded the Good Samaritan Scholarship!"
+  },
+  {
+    "id": "news-18",
+    "date": "2024-05-15",
+    "title": "Guelph-Waterloo Centre Awards",
+    "content": "Graduate students Megan Black and Baylie Kalnitsky received awards from the Guelph-Waterloo Centre Awards Committee."
+  },
+  {
+    "id": "news-17",
+    "date": "2024-04-06",
+    "title": "SOUSCC 52 Oral Presentations",
+    "content": "Five undergraduates presented orally at SOUSCC 52 at Western University in the Biological and Medicinal Chemistry category."
+  },
+  {
+    "id": "news-16",
+    "date": "2024-04-01",
+    "title": "Canada Graduate Scholarship-Master's",
+    "content": "Megan Black has been awarded the Canada Graduate Scholarship-Master's. Congratulations!"
+  },
+  {
+    "id": "news-15",
+    "date": "2024-03-22",
+    "title": "Master's Defense",
+    "content": "Congratulations to Baylie Kalnitsky for successfully defending her masters thesis!"
+  },
+  {
+    "id": "news-14",
+    "date": "2023-12-01",
+    "title": "Publication Accepted",
+    "content": "Peter and Megan's undergraduate research has been accepted for publication in Canadian Journal of Chemistry."
+  },
+  {
+    "id": "news-13",
+    "date": "2023-10-14",
+    "title": "Keynote at MOOT34",
+    "content": "Dr. Huang delivered a keynote presentation on p97 molecular machines and NMR spectroscopy at MOOT34."
+  },
+  {
+    "id": "news-12",
+    "date": "2023-09-07",
+    "title": "Welcome New Graduate Students",
+    "content": "Welcome to new graduate students Megan Black and Peter Myler who joined the lab!"
+  },
+  {
+    "id": "news-11",
+    "date": "2023-08-09",
+    "title": "First Prize at CEPS Poster Presentation",
+    "content": "Congratulations to Megan Black on winning the first prize for the Undergraduate CEPS Poster presentation!"
+  },
+  {
+    "id": "news-10",
+    "date": "2023-05-01",
+    "title": "Summer Research Students",
+    "content": "Undergraduate research students began their summer positions in the lab."
+  },
+  {
+    "id": "news-9",
+    "date": "2023-03-25",
+    "title": "SOUSCC51 Presentation Awards",
+    "content": "Adam McMahon and Megan Black won 1st and 2nd oral presentation prizes in the Chemical Biology Division at SOUSCC51."
+  },
+  {
+    "id": "news-8",
+    "date": "2023-01-15",
+    "title": "New Lab Members",
+    "content": "Welcome to Nicole Dcosta who joined as an MSc student, and Peter Kim who began a fourth-year undergraduate research project."
+  },
+  {
+    "id": "news-7",
+    "date": "2022-12-15",
+    "title": "MSc Thesis Defense",
+    "content": "Congratulations to Nicole Chen for successfully defending her MSc thesis!"
+  },
+  {
+    "id": "news-6",
+    "date": "2022-10-15",
+    "title": "MOOT33 at University of Guelph",
+    "content": "MOOT33 NMR conference was held at University of Guelph with Dr. Huang serving as co-organizer."
+  },
+  {
+    "id": "news-5",
+    "date": "2022-09-01",
+    "title": "Welcome Baylie Kalnitsky",
+    "content": "Baylie Kalnitsky joined the lab as an MSc student."
+  },
+  {
+    "id": "news-4",
+    "date": "2022-08-01",
+    "title": "Book Chapter Published",
+    "content": "Dr. Huang's book chapter on methyl-TROSY NMR spectroscopy was published by the Royal Society of Chemistry."
+  },
+  {
+    "id": "news-3",
+    "date": "2022-05-01",
+    "title": "Graduate Award",
+    "content": "Nicole (Ching) Chen was awarded the Prof Thammaiah Viswanatha Memorial Graduate Award!"
   }
 ]

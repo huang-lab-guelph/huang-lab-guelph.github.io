@@ -1,0 +1,93 @@
+[
+  {
+    "id": "rui-huang",
+    "name": "Rui Huang",
+    "role": "Assistant Professor, Ph.D.",
+    "category": "leader",
+    "bio": "Assistant Professor at the Department of Chemistry, University of Guelph",
+    "education": [
+      "BSc, Chemical Biology, Peking University, China",
+      "PhD, Chemistry, University of Michigan (Dr. Ayyalusamy Ramamoorthy's lab)",
+      "Postdoctoral Fellow, Molecular Genetics, University of Toronto (Dr. Lewis Kay's lab)"
+    ],
+    "image": "rui-huang.jpg"
+  },
+  {
+    "id": "megan-black",
+    "name": "Megan Black",
+    "role": "PhD Student",
+    "category": "graduate",
+    "bio": "BSc, University of Guelph (2018-2023)",
+    "research": "Protein-protein interaction between p97 and its co-factor p47 using NMR spectroscopy",
+    "startYear": 2024,
+    "image": "megan.jpeg"
+  },
+  {
+    "id": "logan-fanning",
+    "name": "Logan Fanning",
+    "role": "MSc Student",
+    "category": "graduate",
+    "bio": "BSc, University of Guelph (2019-2024)",
+    "research": "DnaA protein involved in prokaryotic DNA replication",
+    "startYear": 2024,
+    "image": "logan.png"
+  },
+  {
+    "id": "peter-kim",
+    "name": "Peter Kim",
+    "role": "MSc Student",
+    "category": "graduate",
+    "bio": "BSc, University of Guelph (2019-2024)",
+    "research": "p97-p47 protein interactions",
+    "startYear": 2024,
+    "image": "peterkim.png"
+  },
+  {
+    "id": "paige-kanters",
+    "name": "Paige Kanters",
+    "role": "MSc Student",
+    "category": "graduate",
+    "bio": "BSc, University of Guelph (2019-2024)",
+    "research": "Photoconvertible fluorescent protein mEos3.2",
+    "startYear": 2024,
+    "image": "paige.jpg"
+  },
+  {
+    "id": "max-wong",
+    "name": "Max Wong",
+    "role": "MSc Student",
+    "category": "graduate",
+    "bio": "BSc, University of Toronto (2021-2025)",
+    "research": "Protein binders for Transthyretin (TTR) to prevent aggregate formation",
+    "startYear": 2025
+  },
+  {
+    "id": "shaye-ryan",
+    "name": "Shaye Ryan",
+    "role": "Undergraduate Student",
+    "category": "undergraduate",
+    "bio": "Undergraduate researcher in the Huang Lab",
+    "image": "shaye.jpg"
+  },
+  {
+    "id": "mahreen-chowdhury",
+    "name": "Mahreen Chowdhury",
+    "role": "Undergraduate Student",
+    "category": "undergraduate",
+    "bio": "Undergraduate researcher in the Huang Lab"
+  },
+  {
+    "id": "nathan-wong",
+    "name": "Nathan Wong",
+    "role": "Undergraduate Student",
+    "category": "undergraduate",
+    "bio": "Undergraduate researcher in the Huang Lab"
+  },
+  {
+    "id": "megan-humphrey",
+    "name": "Megan Humphrey",
+    "role": "Undergraduate Student",
+    "category": "undergraduate",
+    "bio": "Undergraduate researcher in the Huang Lab"
+  }
+]
