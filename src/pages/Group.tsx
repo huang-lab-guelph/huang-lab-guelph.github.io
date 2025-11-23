@@ -10,6 +10,9 @@ import peterKimImage from '@/assets/team/peterkim.png'
 import paigeImage from '@/assets/team/paige.jpg'
 import maxWongImage from '@/assets/team/maxwong.jpg'
 import shayeImage from '@/assets/team/shaye.jpg'
+import mahreenImage from '@/assets/team/mahreenchowdhury.jpg'
+import nathanWongImage from '@/assets/team/nathanwong.jpg'
+import meganHumphreyImage from '@/assets/team/meganhumprey.jpg'
 
 // Map image filenames to imports
 const imageMap: Record<string, string> = {
@@ -20,6 +23,9 @@ const imageMap: Record<string, string> = {
   'paige.jpg': paigeImage,
   'maxwong.jpg': maxWongImage,
   'shaye.jpg': shayeImage,
+  'mahreenchowdhury.jpg': mahreenImage,
+  'nathanwong.jpg': nathanWongImage,
+  'meganhumprey.jpg': meganHumphreyImage,
 }
 
 export default function Group() {

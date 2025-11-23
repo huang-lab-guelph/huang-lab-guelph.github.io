@@ -75,21 +75,24 @@
     "name": "Mahreen Chowdhury",
     "role": "Undergraduate Student",
     "category": "undergraduate",
-    "bio": "Undergraduate researcher in the Huang Lab"
+    "bio": "Undergraduate researcher in the Huang Lab",
+    "image": "mahreenchowdhury.jpg"
   },
   {
     "id": "nathan-wong",
     "name": "Nathan Wong",
     "role": "Undergraduate Student",
     "category": "undergraduate",
-    "bio": "Undergraduate researcher in the Huang Lab"
+    "bio": "Undergraduate researcher in the Huang Lab",
+    "image": "nathanwong.jpg"
   },
   {
     "id": "megan-humphrey",
     "name": "Megan Humphrey",
     "role": "Undergraduate Student",
     "category": "undergraduate",
-    "bio": "Undergraduate researcher in the Huang Lab"
+    "bio": "Undergraduate researcher in the Huang Lab",
+    "image": "meganhumprey.jpg"
   },
   {
     "id": "emilie-carson",
