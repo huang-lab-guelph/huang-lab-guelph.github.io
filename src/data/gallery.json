@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "title": "Group Photos",
+    "description": "Lab team pictures from recent years",
+    "slug": "group-photos",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/group-photos/photo-1.jpg",
+        "caption": "Group photo - September 2024",
+        "alt": "Huang Lab group photo from September 2024"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/group-photos/photo-2.jpg",
+        "caption": "Group photo - 2023",
+        "alt": "Huang Lab group photo from 2023"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/group-photos/photo-3.jpg",
+        "caption": "Group photo - 2022",
+        "alt": "Huang Lab group photo from 2022"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "SOUSCC 53 at the University of Guelph",
+    "description": "Conference event hosted at our home institution",
+    "slug": "souscc-53",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/souscc-53/photo-1.jpg",
+        "caption": "SOUSCC 53 conference session",
+        "alt": "Conference presentation at SOUSCC 53"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/souscc-53/photo-2.jpg",
+        "caption": "SOUSCC 53 participants",
+        "alt": "Group of participants at SOUSCC 53"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "MOOT 35 at McGill University",
+    "description": "Lab members participating in the MOOT competition",
+    "slug": "moot-35",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/moot-35/photo-1.jpg",
+        "caption": "MOOT 35 competition",
+        "alt": "Lab members at MOOT 35 at McGill"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/moot-35/photo-2.jpg",
+        "caption": "MOOT 35 team preparations",
+        "alt": "Team preparing for MOOT 35"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/moot-35/photo-3.jpg",
+        "caption": "MOOT 35 event",
+        "alt": "MOOT 35 event at McGill University"
+      },
+      {
+        "id": 4,
+        "src": "/images/gallery/moot-35/photo-4.jpg",
+        "caption": "MOOT 35 participants",
+        "alt": "Group photo at MOOT 35"
+      },
+      {
+        "id": 5,
+        "src": "/images/gallery/moot-35/photo-5.jpg",
+        "caption": "MOOT 35 activities",
+        "alt": "Activities at MOOT 35"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Celebrations!",
+    "description": "Celebrating lab achievements and milestones",
+    "slug": "celebrations",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/celebrations/photo-1.jpg",
+        "caption": "Competition winners - Adam McMahon and Megan Black placing 1st and 2nd at SOUCC51",
+        "alt": "Adam McMahon and Megan Black celebrating their competition success"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/celebrations/photo-2.jpg",
+        "caption": "Lab celebration",
+        "alt": "Lab members celebrating achievements"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/celebrations/photo-3.jpg",
+        "caption": "Achievement recognition",
+        "alt": "Recognizing lab achievements"
+      },
+      {
+        "id": 4,
+        "src": "/images/gallery/celebrations/photo-4.jpg",
+        "caption": "Team success",
+        "alt": "Team celebrating success"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Fun Times!",
+    "description": "Casual photos of lab activities and outings",
+    "slug": "fun-times",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/fun-times/photo-1.jpg",
+        "caption": "Lab social event",
+        "alt": "Lab members during social activities"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/fun-times/photo-2.jpg",
+        "caption": "Team outing",
+        "alt": "Team outing and bonding"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/fun-times/photo-3.jpg",
+        "caption": "Lab fun activities",
+        "alt": "Fun activities with lab members"
+      },
+      {
+        "id": 4,
+        "src": "/images/gallery/fun-times/photo-4.jpg",
+        "caption": "Team bonding",
+        "alt": "Team bonding activities"
+      },
+      {
+        "id": 5,
+        "src": "/images/gallery/fun-times/photo-5.jpg",
+        "caption": "Casual lab moments",
+        "alt": "Casual moments in the lab"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Pottery Outing!",
+    "description": "Team pottery class activity",
+    "slug": "pottery-outing",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/pottery-outing/photo-1.jpg",
+        "caption": "Pottery class fun",
+        "alt": "Lab members at pottery class"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/pottery-outing/photo-2.jpg",
+        "caption": "Creating pottery",
+        "alt": "Team members creating pottery"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/pottery-outing/photo-3.jpg",
+        "caption": "Pottery creations",
+        "alt": "Finished pottery creations"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Presentations at SOUSCC 52 at Western University",
+    "description": "Student presentations at the conference",
+    "slug": "souscc-52-presentations",
+    "images": [
+      {
+        "id": 1,
+        "src": "/images/gallery/souscc-52-presentations/photo-1.jpg",
+        "caption": "Presentation at SOUSCC 52",
+        "alt": "Student presenting at SOUSCC 52"
+      },
+      {
+        "id": 2,
+        "src": "/images/gallery/souscc-52-presentations/photo-2.jpg",
+        "caption": "Conference presentation",
+        "alt": "Lab member presenting research"
+      },
+      {
+        "id": 3,
+        "src": "/images/gallery/souscc-52-presentations/photo-3.jpg",
+        "caption": "SOUSCC 52 poster session",
+        "alt": "Poster presentation at SOUSCC 52"
+      },
+      {
+        "id": 4,
+        "src": "/images/gallery/souscc-52-presentations/photo-4.jpg",
+        "caption": "Research discussion",
+        "alt": "Discussing research at conference"
+      },
+      {
+        "id": 5,
+        "src": "/images/gallery/souscc-52-presentations/photo-5.jpg",
+        "caption": "Conference participants",
+        "alt": "Lab members at SOUSCC 52"
+      }
+    ]
+  }
+]

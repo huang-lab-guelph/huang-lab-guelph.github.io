@@ -41,3 +41,18 @@ export interface ResearchArea {
   description: string
   image?: string
 }
+
+export interface GalleryImage {
+  id: number
+  src: string
+  caption: string
+  alt: string
+}
+
+export interface GalleryCollection {
+  id: number
+  title: string
+  description: string
+  slug: string
+  images: GalleryImage[]
+}
