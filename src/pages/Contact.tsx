@@ -1,4 +1,4 @@
-import { Mail, MapPin, Building2, Twitter, Linkedin, GraduationCap, Users } from 'lucide-react'
+import { Mail, MapPin, Building2, Twitter, Linkedin, GraduationCap, Users, Github, UserCircle } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -119,6 +119,51 @@ export default function Contact() {
                 <div>
                   <p className="font-medium">ResearchGate</p>
                   <p className="text-sm text-gray-600">Rui Huang</p>
+                </div>
+              </a>
+
+              <a
+                href="https://scholar.google.com/citations?user=WqYyo04AAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+              >
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-blue-600" />
+                </div>
+                <div>
+                  <p className="font-medium">Google Scholar</p>
+                  <p className="text-sm text-gray-600">Rui Huang</p>
+                </div>
+              </a>
+
+              <a
+                href="https://orcid.org/0000-0002-4064-6397"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+              >
+                <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center">
+                  <UserCircle className="w-5 h-5 text-green-600" />
+                </div>
+                <div>
+                  <p className="font-medium">ORCID</p>
+                  <p className="text-sm text-gray-600">0000-0002-4064-6397</p>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/huang-lab-guelph"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+              >
+                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center">
+                  <Github className="w-5 h-5 text-gray-700" />
+                </div>
+                <div>
+                  <p className="font-medium">GitHub</p>
+                  <p className="text-sm text-gray-600">huang-lab-guelph</p>
                 </div>
               </a>
             </div>
