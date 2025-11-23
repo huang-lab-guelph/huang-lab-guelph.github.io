@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import p97Image from '../assets/p97.png'
 
 export default function Hero() {
   return (
@@ -11,12 +12,12 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
         {/* Hero Content with Image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-          {/* Left: NMR Tube Image */}
+          {/* Left: P97 Protein Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative w-80 h-80 sm:w-96 sm:h-96">
               <img
-                src="/nmrtube.jpg"
-                alt="NMR tube illustration with protein structures"
+                src={p97Image}
+                alt="P97 protein structure illustration"
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
             </div>
