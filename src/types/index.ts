@@ -9,13 +9,15 @@ export interface TeamMember {
   id: string
   name: string
   role: string
-  category: 'leader' | 'graduate' | 'undergraduate'
+  category: 'leader' | 'graduate' | 'undergraduate' | 'alumni'
   bio: string
   education?: string[]
   research?: string
   image?: string
   email?: string
   startYear?: number
+  degree?: string
+  currentPosition?: string
 }
 
 export interface Publication {

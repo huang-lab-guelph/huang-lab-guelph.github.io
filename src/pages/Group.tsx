@@ -26,6 +26,7 @@ export default function Group() {
   const leader = team.filter(member => member.category === 'leader')
   const graduates = team.filter(member => member.category === 'graduate')
   const undergrads = team.filter(member => member.category === 'undergraduate')
+  const alumni = team.filter(member => member.category === 'alumni')
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
@@ -169,6 +170,32 @@ export default function Group() {
                 <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
                 <p className="text-xs text-primary font-semibold mt-1">{member.role}</p>
               </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Alumni */}
+      <section className="mt-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary">
+          Alumni
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {alumni.map((member) => (
+            <div
+              key={member.id}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow duration-200"
+            >
+              <h3 className="font-semibold text-gray-900">{member.name}</h3>
+              {member.degree && (
+                <p className="text-sm text-gray-600 mt-1">{member.degree}</p>
+              )}
+              {member.bio && (
+                <p className="text-xs text-gray-500 mt-1">{member.bio}</p>
+              )}
+              {member.currentPosition && (
+                <p className="text-sm text-primary mt-2">{member.currentPosition}</p>
+              )}
             </div>
           ))}
         </div>

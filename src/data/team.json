@@ -89,5 +89,148 @@
     "role": "Undergraduate Student",
     "category": "undergraduate",
     "bio": "Undergraduate researcher in the Huang Lab"
+  },
+  {
+    "id": "emilie-carson",
+    "name": "Emilie Carson",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biochemistry",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "nicole-dcosta",
+    "name": "Nicole Dcosta",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "MSc, Chemistry",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "susan-debevc",
+    "name": "Susan Debevc",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, BPCH",
+    "bio": "University of Guelph",
+    "currentPosition": "RAQC student at Seneca Polytechnic"
+  },
+  {
+    "id": "henry-lim",
+    "name": "Henry Lim",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Chemistry",
+    "bio": "University of Guelph",
+    "currentPosition": "MSc student in Chemistry at University of Guelph"
+  },
+  {
+    "id": "raji-raseekan",
+    "name": "Raji Raseekan",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biomedical Toxicology",
+    "bio": "University of Guelph",
+    "currentPosition": "PhD student in Biochemistry at University of Toronto"
+  },
+  {
+    "id": "kazimir-gudelis",
+    "name": "Kazimir Gudelis",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biochemistry",
+    "bio": "University of Guelph",
+    "currentPosition": "MBiotech student at University of Toronto"
+  },
+  {
+    "id": "emma-rhode",
+    "name": "Emma Rhode",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biomedical Toxicology",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "baylie-kalnitsky",
+    "name": "Baylie Kalnitsky",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "MSc, Chemistry",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "adam-mcmahon",
+    "name": "Adam McMahon",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biological and Pharmaceutical Chemistry",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "simrah-waseem",
+    "name": "Simrah Waseem",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, Biomedical Science",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "nicole-chen",
+    "name": "Nicole Chen",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "MSc, Chemistry",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "victoria-muir",
+    "name": "Victoria Muir",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, 4th-year research student",
+    "bio": "University of Guelph",
+    "currentPosition": "MSc student at McMaster University"
+  },
+  {
+    "id": "chor-kwan-lam",
+    "name": "Chor Kwan Lam",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "Master of Bioinformatics Capping Project",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "sabrina-heddokheel",
+    "name": "Sabrina Heddokheel",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, 4th-year research student",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "jill-yuen",
+    "name": "Jill Yuen",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, 4th-year research student",
+    "bio": "University of Guelph"
+  },
+  {
+    "id": "husain-al-jaberi",
+    "name": "Husain Al-Jaberi",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, 4th-year research student",
+    "bio": "University of Guelph",
+    "currentPosition": "Graduate student at Western Ontario University"
+  },
+  {
+    "id": "aaron-ovadia",
+    "name": "Aaron Ovadia",
+    "role": "Alumni",
+    "category": "alumni",
+    "degree": "BSc, 4th-year research student",
+    "bio": "University of Guelph",
+    "currentPosition": "Medical school student"
   }
 ]
