@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "date": "2024-01-15",
+    "title": "Welcome to the new Huang Lab website!",
+    "content": "We're excited to launch our new website with a modern design and improved accessibility."
+  },
+  {
+    "id": "2",
+    "date": "2024-01-10",
+    "title": "New Publication in Nature Structural Biology",
+    "content": "Our latest research on protein complex dynamics has been published in Nature Structural Biology."
+  },
+  {
+    "id": "3",
+    "date": "2023-12-15",
+    "title": "Congratulations to Sarah on her scholarship!",
+    "content": "PhD student Sarah Chen has been awarded the prestigious NSERC CGS-D scholarship."
+  }
+]
