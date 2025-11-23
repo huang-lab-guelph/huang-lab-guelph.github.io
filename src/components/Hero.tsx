@@ -3,31 +3,35 @@ import { Link } from 'react-router-dom'
 
 export default function Hero() {
   return (
-    <div className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+    <div className="relative bg-watercolor-cream overflow-hidden">
+      {/* Decorative watercolor spots */}
+      <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Huang Lab
+          <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-7xl mb-2">
+            Huang's Lab
           </h1>
-          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-6 text-2xl text-primary font-serif max-w-3xl mx-auto">
             Advanced NMR and Structural Biology Research
           </p>
-          <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We study molecular mechanisms of protein complexes, particularly large protein assemblies, 
-            using advanced Nuclear Magnetic Resonance (NMR) techniques in combination with other 
+          <p className="mt-8 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            We study molecular mechanisms of protein complexes, particularly large protein assemblies,
+            using advanced Nuclear Magnetic Resonance (NMR) techniques in combination with other
             structural biology tools such as cryo-Electron Microscopy and Mass Spectrometry.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-12 flex items-center justify-center gap-x-6 flex-wrap gap-y-4">
             <Link
               to="/research"
-              className="rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 transition-colors flex items-center gap-2"
+              className="rounded-xl bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-organic hover:shadow-organic-lg hover:scale-105 transition-all flex items-center gap-2"
             >
               Explore Our Research
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               to="/group"
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-primary transition-colors"
+              className="text-base font-semibold leading-6 text-foreground hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-secondary"
             >
               Meet Our Team <span aria-hidden="true">→</span>
             </Link>
@@ -35,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* Research Focus Areas */}
-        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-24 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
               title: '3D Protein Structure',
@@ -53,13 +57,16 @@ export default function Hero() {
               title: 'Therapeutic Design',
               description: 'Drug discovery strategies',
             },
-          ].map((focus) => (
+          ].map((focus, idx) => (
             <div
               key={focus.title}
-              className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              className="group bg-card rounded-2xl p-6 shadow-organic border-2 border-border hover:border-primary/30 hover:shadow-organic-lg transition-all duration-300 hover:-translate-y-1"
+              style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{focus.title}</h3>
-              <p className="text-sm text-gray-600">{focus.description}</p>
+              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                {focus.title}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{focus.description}</p>
             </div>
           ))}
         </div>

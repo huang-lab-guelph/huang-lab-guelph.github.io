@@ -15,11 +15,11 @@ export default function LabNews() {
   }
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Lab News</h2>
-          <p className="mt-4 text-lg text-gray-600">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-foreground sm:text-5xl font-serif mb-4">Lab News</h2>
+          <p className="mt-4 text-xl text-muted-foreground">
             Latest updates and announcements from our lab
           </p>
         </div>
@@ -28,16 +28,16 @@ export default function LabNews() {
           {news.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+              className="group bg-card rounded-2xl border-2 border-border p-8 hover:border-primary/40 shadow-organic hover:shadow-organic-lg hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
+              <div className="flex items-center gap-2 text-sm text-primary mb-4 font-medium">
                 <Calendar className="h-4 w-4" />
                 <time dateTime={item.date}>{formatDate(item.date)}</time>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
                 {item.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {item.content}
               </p>
             </div>

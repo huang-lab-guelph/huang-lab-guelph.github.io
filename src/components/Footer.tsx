@@ -3,28 +3,31 @@ import { Twitter, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-secondary border-t-2 border-border">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Lab Info */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Huang Lab</h3>
-            <p className="text-sm text-gray-600">
+            <h3 className="text-xl font-serif font-bold text-primary mb-4">Huang's Lab</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Advanced NMR and Structural Biology Research
             </p>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-muted-foreground mt-3 font-medium">
               University of Guelph
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact</h3>
-            <address className="not-italic text-sm text-gray-600 space-y-1">
+            <h3 className="text-lg font-semibold text-foreground mb-4">Contact</h3>
+            <address className="not-italic text-sm text-muted-foreground space-y-2 leading-relaxed">
               <p>MacN-129, 43 Reynolds Walk</p>
               <p>Guelph, ON N1G 1Y4</p>
-              <p className="mt-2">
-                <a href="mailto:rhuang08@uoguelph.ca" className="hover:text-primary transition-colors">
+              <p className="mt-3">
+                <a
+                  href="mailto:rhuang08@uoguelph.ca"
+                  className="text-primary hover:underline hover:text-primary/80 transition-all font-medium"
+                >
                   rhuang08@uoguelph.ca
                 </a>
               </p>
@@ -33,38 +36,38 @@ export default function Footer() {
 
           {/* Social & Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect</h3>
-            <div className="flex gap-4 mb-4">
-              <a 
-                href="https://twitter.com/huanglab" 
-                target="_blank" 
+            <h3 className="text-lg font-semibold text-foreground mb-4">Connect</h3>
+            <div className="flex gap-3 mb-6">
+              <a
+                href="https://twitter.com/huanglab"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="p-2 rounded-lg bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-organic hover:shadow-organic-lg"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/rui-huang" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/rui-huang"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-primary transition-colors"
+                className="p-2 rounded-lg bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-organic hover:shadow-organic-lg"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-            <div className="text-sm text-gray-600 space-y-1">
-              <Link to="/useful-links" className="block hover:text-primary transition-colors">
-                Useful Links
+            <div className="text-sm text-muted-foreground space-y-2">
+              <Link to="/useful-links" className="block hover:text-primary transition-colors font-medium">
+                Useful Links →
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200">
-          <p className="text-center text-sm text-gray-600">
-            © {new Date().getFullYear()} Huang Lab, University of Guelph. All rights reserved.
+        <div className="mt-12 pt-8 border-t-2 border-border">
+          <p className="text-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Huang's Lab, University of Guelph. All rights reserved.
           </p>
         </div>
       </div>
