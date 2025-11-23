@@ -60,7 +60,7 @@ src/
 
 The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions.
 
-**Live URL**: https://huang-lab-guelph.github.io/huang-lab-guelph.github.io/
+**Live URL**: https://huang-lab-guelph.github.io/
 
 ## Content Management
 

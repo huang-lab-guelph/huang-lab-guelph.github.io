@@ -118,12 +118,12 @@ All data structures have corresponding TypeScript interfaces in `src/types/index
 1. Repository: `huang-lab-guelph.github.io`
 2. Branch: `main` (source code)
 3. Deploy target: GitHub Pages via Actions
-4. URL: `https://huang-lab-guelph.github.io/huang-lab-guelph.github.io/`
+4. URL: `https://huang-lab-guelph.github.io/`
 
 ### Deployment Process
 1. Push to `main` branch triggers GitHub Actions workflow
 2. Workflow installs dependencies, builds project, and deploys to GitHub Pages
-3. Vite builds with base path `/huang-lab-guelph.github.io/` for proper asset resolution
+3. Vite builds with base path `/` (root) since this is a user/org GitHub Pages site
 4. Built files served from `gh-pages` branch (auto-managed)
 
 ### Local Development
