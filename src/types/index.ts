@@ -11,6 +11,7 @@ export interface TeamMember {
   role: string
   category: 'leader' | 'graduate' | 'undergraduate' | 'alumni'
   bio: string
+  detailedBio?: string
   education?: string[]
   research?: string
   image?: string

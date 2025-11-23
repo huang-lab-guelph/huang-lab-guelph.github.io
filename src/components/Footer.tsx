@@ -39,7 +39,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-foreground mb-4">Connect</h3>
             <div className="flex gap-3 mb-6">
               <a
-                href="https://twitter.com/huanglab"
+                href="https://x.com/Ruihuangchem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-organic hover:shadow-organic-lg"
@@ -48,7 +48,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/rui-huang"
+                href="https://www.linkedin.com/in/rui-huang-82108565/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-organic hover:shadow-organic-lg"

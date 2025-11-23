@@ -5,6 +5,7 @@
     "role": "Assistant Professor, Ph.D.",
     "category": "leader",
     "bio": "Assistant Professor at the Department of Chemistry, University of Guelph",
+    "detailedBio": "Assistant Professor at University of Guelph Chemistry. Postdoctoral experience at University of Toronto under Dr. Lewis Kay. PhD from University of Michigan under Dr. Ayyalusamy Ramamoorthy. BSc from Peking University in Chemical Biology.",
     "education": [
       "BSc, Chemical Biology, Peking University, China",
       "PhD, Chemistry, University of Michigan (Dr. Ayyalusamy Ramamoorthy's lab)",
@@ -18,6 +19,7 @@
     "role": "PhD Student",
     "category": "graduate",
     "bio": "BSc, University of Guelph (2018-2023)",
+    "detailedBio": "Completed her BSc in Biological and Pharmaceutical Chemistry at University of Guelph. Started as a fourth-year research student investigating allostery in YME1L. Currently using NMR spectroscopy to study p97 and p47 protein interactions. Enjoys true crime podcasts, baking, and spending time with her two dogs and cat.",
     "research": "Protein-protein interaction between p97 and its co-factor p47 using NMR spectroscopy",
     "startYear": 2024,
     "image": "megan.jpeg"
@@ -28,6 +30,7 @@
     "role": "MSc Student",
     "category": "graduate",
     "bio": "BSc, University of Guelph (2019-2024)",
+    "detailedBio": "Pursuing Master's in Chemistry with toxicology specialization. BSc from University of Guelph (2019-2024). Passion for pharmaceutical and biochemical science. Completed fourth-year research on p47's effect on p97 ATPase activity. Now researching DnaA protein in prokaryotic DNA replication. Enjoys chess, tennis, and hockey.",
     "research": "DnaA protein involved in prokaryotic DNA replication",
     "startYear": 2024,
     "image": "logan.png"
@@ -38,6 +41,7 @@
     "role": "MSc Student",
     "category": "graduate",
     "bio": "BSc, University of Guelph (2019-2024)",
+    "detailedBio": "Completing Master's in Chemistry with toxicology focus. BSc from University of Guelph (2019-2024). Interested in cellular biology and organic chemistry. Conducted undergraduate research on p97-p47 interactions. Aspires toward medicine or drug research. Enjoys rock climbing, camping, golfing, and biking.",
     "research": "p97-p47 protein interactions",
     "startYear": 2024,
     "image": "peterkim.png"
@@ -48,6 +52,7 @@
     "role": "MSc Student",
     "category": "graduate",
     "bio": "BSc, University of Guelph (2019-2024)",
+    "detailedBio": "Completed BPCH Co-op degree at University of Guelph. Joined lab in final undergraduate year, assisting with p47-p97 complex research using NMR spectroscopy. Currently investigating photoconvertible fluorescent protein mEos3.2 for structural insights. Enjoys crocheting, baking, and time with her cats.",
     "research": "Photoconvertible fluorescent protein mEos3.2",
     "startYear": 2024,
     "image": "paige.jpg"
@@ -58,6 +63,7 @@
     "role": "MSc Student",
     "category": "graduate",
     "bio": "BSc, University of Toronto (2021-2025)",
+    "detailedBio": "Recently completed Honours BSc in Forensic Chemistry from University of Toronto. Passionate about analytical chemistry and spectroscopic protein interaction analysis. Researching potential protein binders for Transthyretin (TTR) to prevent aggregation. Enjoys basketball, golf, and fishing.",
     "research": "Protein binders for Transthyretin (TTR) to prevent aggregate formation",
     "startYear": 2025,
     "image": "maxwong.jpg"
@@ -68,6 +74,7 @@
     "role": "Undergraduate Student",
     "category": "undergraduate",
     "bio": "Undergraduate researcher in the Huang Lab",
+    "detailedBio": "Fourth-year Biochemistry student with co-op. Studying p47-p97 interactions via NMR spectroscopy for research project. Interest in structural biology and cellular pathways. Aspires toward research roles supporting drug development. Enjoys hiking and traveling.",
     "image": "shaye.jpg"
   },
   {
@@ -76,6 +83,7 @@
     "role": "Undergraduate Student",
     "category": "undergraduate",
     "bio": "Undergraduate researcher in the Huang Lab",
+    "detailedBio": "Fourth-year Biomedical Toxicology with Co-op. Previously worked as pharmacy assistant. Received Undergraduate Research Award investigating ubiquitin variant binding affinities to p47. Pursues pharmaceutical industry interests. Enjoys drawing, painting, and socializing.",
     "image": "mahreenchowdhury.jpg"
   },
   {
@@ -84,6 +92,7 @@
     "role": "Undergraduate Student",
     "category": "undergraduate",
     "bio": "Undergraduate researcher in the Huang Lab",
+    "detailedBio": "Fifth-year Biomedical Toxicology student. Working with GFP researching protein behavior and molecular interactions involving DNA aptamers. Also employed at university's Laboratory Services Division in analytical biology. Enjoys gaming, Pokémon, and fishing.",
     "image": "nathanwong.jpg"
   },
   {
@@ -92,6 +101,7 @@
     "role": "Undergraduate Student",
     "category": "undergraduate",
     "bio": "Undergraduate researcher in the Huang Lab",
+    "detailedBio": "Fifth-year Biomedical Toxicology (Co-op). Previously co-op student at Kenvue supporting Tylenol® R&D. Establishing in vitro substrate unfolding assay for p97-p47 translocation mechanism study. Investigating membrane remodeling protein interactions. Enjoys music, reading, and travel.",
     "image": "meganhumprey.jpg"
   },
   {

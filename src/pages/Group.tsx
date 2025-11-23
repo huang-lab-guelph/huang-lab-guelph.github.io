@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { User } from 'lucide-react'
 import { TeamMember } from '@/types'
 import teamData from '@/data/team.json'
+import TeamMemberModal from '@/components/TeamMemberModal'
 
 // Import team images
 import ruiHuangImage from '@/assets/team/rui-huang.jpg'
@@ -30,21 +32,40 @@ const imageMap: Record<string, string> = {
 
 export default function Group() {
   const team = teamData as TeamMember[]
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [modalImageUrl, setModalImageUrl] = useState<string | undefined>(undefined)
 
   const leader = team.filter(member => member.category === 'leader')
   const graduates = team.filter(member => member.category === 'graduate')
   const undergrads = team.filter(member => member.category === 'undergraduate')
   const alumni = team.filter(member => member.category === 'alumni')
 
+  const handleMemberClick = (member: TeamMember) => {
+    if (member.detailedBio) {
+      setSelectedMember(member)
+      setModalImageUrl(member.image ? imageMap[member.image] : undefined)
+      setIsModalOpen(true)
+    }
+  }
+
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      {/* Header */}
-      <div className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h1>
-        <p className="text-xl text-gray-600 leading-relaxed">
-          Meet the talented researchers driving innovation in structural biology and NMR spectroscopy
-        </p>
-      </div>
+    <>
+      <TeamMemberModal
+        member={selectedMember}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageUrl={modalImageUrl}
+      />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        {/* Header */}
+        <div className="mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Meet the talented researchers driving innovation in structural biology and NMR spectroscopy
+          </p>
+        </div>
 
       {/* Group Leader */}
       <section className="mb-16">
@@ -55,7 +76,8 @@ export default function Group() {
           {leader.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              onClick={() => handleMemberClick(member)}
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
                 {/* Image */}
@@ -108,7 +130,8 @@ export default function Group() {
           {graduates.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              onClick={() => handleMemberClick(member)}
             >
               {/* Image */}
               <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
@@ -158,7 +181,8 @@ export default function Group() {
           {undergrads.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              onClick={() => handleMemberClick(member)}
             >
               {/* Image */}
               <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
@@ -208,6 +232,7 @@ export default function Group() {
           ))}
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
