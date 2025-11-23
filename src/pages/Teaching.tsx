@@ -51,18 +51,6 @@ export default function Teaching() {
         </div>
       </section>
 
-      {/* Teaching Philosophy */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-4 border-b-2 border-primary/20">
-          Teaching Philosophy
-        </h2>
-        <div className="bg-gray-50 rounded-lg p-8 border border-gray-200">
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Content about teaching philosophy and approach to education.
-          </p>
-        </div>
-      </section>
-
       {/* Past Courses */}
       <section>
         <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-4 border-b-2 border-primary/20">
