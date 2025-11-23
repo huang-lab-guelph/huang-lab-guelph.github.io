@@ -14,14 +14,26 @@
       {
         "id": 2,
         "src": "/images/gallery/group-photos/photo-2.jpg",
-        "caption": "Group photo - 2023",
-        "alt": "Huang Lab group photo from 2023"
+        "caption": "Group photo - September 2023",
+        "alt": "Huang Lab group photo from September 2023"
       },
       {
         "id": 3,
         "src": "/images/gallery/group-photos/photo-3.jpg",
-        "caption": "Group photo - 2022",
-        "alt": "Huang Lab group photo from 2022"
+        "caption": "Group photo - September 2022",
+        "alt": "Huang Lab group photo from September 2022"
+      },
+      {
+        "id": 4,
+        "src": "/images/gallery/group-photos/photo-4.jpg",
+        "caption": "Group photo - July 2022",
+        "alt": "Huang Lab group photo from July 2022"
+      },
+      {
+        "id": 5,
+        "src": "/images/gallery/group-photos/photo-5.jpg",
+        "caption": "Group photo - August 2021",
+        "alt": "Huang Lab group photo from August 2021"
       }
     ]
   },
@@ -33,13 +45,13 @@
     "images": [
       {
         "id": 1,
-        "src": "/images/gallery/souscc-53/photo-1.jpg",
+        "src": "/images/gallery/souscc-53/photo-1.jpeg",
         "caption": "SOUSCC 53 conference session",
         "alt": "Conference presentation at SOUSCC 53"
       },
       {
         "id": 2,
-        "src": "/images/gallery/souscc-53/photo-2.jpg",
+        "src": "/images/gallery/souscc-53/photo-2.jpeg",
         "caption": "SOUSCC 53 participants",
         "alt": "Group of participants at SOUSCC 53"
       }
@@ -80,7 +92,26 @@
         "src": "/images/gallery/moot-35/photo-5.jpg",
         "caption": "MOOT 35 activities",
         "alt": "Activities at MOOT 35"
+      },
+      {
+        "id": 6,
+        "src": "/images/gallery/moot-35/photo-6.jpg",
+        "caption": "MOOT 35 activities",
+        "alt": "Activities at MOOT 35"
+      },
+      {
+        "id": 7,
+        "src": "/images/gallery/moot-35/photo-7.jpg",
+        "caption": "MOOT 35 activities",
+        "alt": "Activities at MOOT 35"
+      },
+      {
+        "id": 8,
+        "src": "/images/gallery/moot-35/photo-8.jpg",
+        "caption": "MOOT 35 activities",
+        "alt": "Activities at MOOT 35"
       }
+
     ]
   },
   {
@@ -112,6 +143,12 @@
         "src": "/images/gallery/celebrations/photo-4.jpg",
         "caption": "Team success",
         "alt": "Team celebrating success"
+      },
+      {
+        "id": 5,
+        "src": "/images/gallery/celebrations/photo-5.jpg",
+        "caption": "Team success",
+        "alt": "Team celebrating success"
       }
     ]
   },
@@ -135,19 +172,19 @@
       },
       {
         "id": 3,
-        "src": "/images/gallery/fun-times/photo-3.jpg",
+        "src": "/images/gallery/fun-times/photo-3.png",
         "caption": "Lab fun activities",
         "alt": "Fun activities with lab members"
       },
       {
         "id": 4,
-        "src": "/images/gallery/fun-times/photo-4.jpg",
+        "src": "/images/gallery/fun-times/photo-4.png",
         "caption": "Team bonding",
         "alt": "Team bonding activities"
       },
       {
         "id": 5,
-        "src": "/images/gallery/fun-times/photo-5.jpg",
+        "src": "/images/gallery/fun-times/photo-5.png",
         "caption": "Casual lab moments",
         "alt": "Casual moments in the lab"
       }
@@ -212,6 +249,12 @@
       {
         "id": 5,
         "src": "/images/gallery/souscc-52-presentations/photo-5.jpg",
+        "caption": "Conference participants",
+        "alt": "Lab members at SOUSCC 52"
+      },
+      {
+        "id": 6,
+        "src": "/images/gallery/souscc-52-presentations/photo-6.jpg",
         "caption": "Conference participants",
         "alt": "Lab members at SOUSCC 52"
       }
