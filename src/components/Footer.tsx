@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { Twitter, Linkedin } from 'lucide-react'
+import { Twitter, Linkedin, Github } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -37,7 +36,7 @@ export default function Footer() {
           {/* Social & Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4">Connect</h3>
-            <div className="flex gap-3 mb-6">
+            <div className="flex gap-3">
               <a
                 href="https://x.com/Ruihuangchem"
                 target="_blank"
@@ -56,11 +55,15 @@ export default function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-            </div>
-            <div className="text-sm text-muted-foreground space-y-2">
-              <Link to="/useful-links" className="block hover:text-primary transition-colors font-medium">
-                Useful Links →
-              </Link>
+              <a
+                href="https://github.com/huang-lab-guelph"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-organic hover:shadow-organic-lg"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>

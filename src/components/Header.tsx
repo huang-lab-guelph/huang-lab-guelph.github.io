@@ -7,9 +7,9 @@ const navigation = [
   { name: 'Research', href: '/research' },
   { name: 'Group', href: '/group' },
   { name: 'Publications', href: '/publications' },
+  { name: 'Teaching', href: '/teaching' },
   { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Useful Links', href: '/useful-links' },
 ]
 
 export default function Header() {

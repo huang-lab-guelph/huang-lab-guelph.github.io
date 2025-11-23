@@ -6,7 +6,7 @@ import Group from './pages/Group'
 import Publications from './pages/Publications'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
-import UsefulLinks from './pages/UsefulLinks'
+import Teaching from './pages/Teaching'
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
           <Route path="/research" element={<Research />} />
           <Route path="/group" element={<Group />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path="/teaching" element={<Teaching />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/useful-links" element={<UsefulLinks />} />
         </Routes>
       </Layout>
     </Router>
