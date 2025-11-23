@@ -1,4 +1,4 @@
-import { ExternalLink, FileText } from 'lucide-react'
+import { ExternalLink, FileText, GraduationCap } from 'lucide-react'
 import { Publication } from '@/types'
 import publicationsData from '@/data/publications.json'
 
@@ -39,10 +39,21 @@ export default function Publications() {
     <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Publications</h1>
+        <div className="flex items-start justify-between gap-4 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900">Publications</h1>
+          <a
+            href="https://scholar.google.com/citations?user=WqYyo04AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
+          >
+            <GraduationCap className="w-5 h-5" />
+            <span className="font-medium">Google Scholar</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
         <p className="text-lg text-gray-600 leading-relaxed">
           Peer-reviewed publications and book chapters from the Huang Lab and collaborators.
-          Total: <strong>{publications.length} publications</strong>
         </p>
       </div>
 
