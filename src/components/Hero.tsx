@@ -9,32 +9,47 @@ export default function Hero() {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-        <div className="text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-7xl mb-2">
-            Huang's Lab
-          </h1>
-          <p className="mt-6 text-2xl text-primary font-serif max-w-3xl mx-auto">
-            Advanced NMR and Structural Biology Research
-          </p>
-          <p className="mt-8 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We study molecular mechanisms of protein complexes, particularly large protein assemblies,
-            using advanced Nuclear Magnetic Resonance (NMR) techniques in combination with other
-            structural biology tools such as cryo-Electron Microscopy and Mass Spectrometry.
-          </p>
-          <div className="mt-12 flex items-center justify-center gap-x-6 flex-wrap gap-y-4">
-            <Link
-              to="/research"
-              className="rounded-xl bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-organic hover:shadow-organic-lg hover:scale-105 transition-all flex items-center gap-2"
-            >
-              Explore Our Research
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link
-              to="/group"
-              className="text-base font-semibold leading-6 text-foreground hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-secondary"
-            >
-              Meet Our Team <span aria-hidden="true">→</span>
-            </Link>
+        {/* Hero Content with Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+          {/* Left: NMR Tube Image */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96">
+              <img
+                src="/nmrtube.jpg"
+                alt="NMR tube illustration with protein structures"
+                className="w-full h-full object-contain drop-shadow-2xl"
+              />
+            </div>
+          </div>
+
+          {/* Right: Text Content */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-7xl mb-2">
+              Huang's Lab
+            </h1>
+            <p className="mt-6 text-2xl text-primary font-serif">
+              Advanced NMR and Structural Biology Research
+            </p>
+            <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+              We study molecular mechanisms of protein complexes, particularly large protein assemblies,
+              using advanced Nuclear Magnetic Resonance (NMR) techniques in combination with other
+              structural biology tools such as cryo-Electron Microscopy and Mass Spectrometry.
+            </p>
+            <div className="mt-12 flex items-center justify-center lg:justify-start gap-x-6 flex-wrap gap-y-4">
+              <Link
+                to="/research"
+                className="rounded-xl bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-organic hover:shadow-organic-lg hover:scale-105 transition-all flex items-center gap-2"
+              >
+                Explore Our Research
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+              <Link
+                to="/group"
+                className="text-base font-semibold leading-6 text-foreground hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-secondary"
+              >
+                Meet Our Team <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </div>
 
