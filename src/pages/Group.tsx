@@ -8,6 +8,7 @@ import meganImage from '@/assets/team/megan.jpeg'
 import loganImage from '@/assets/team/logan.png'
 import peterKimImage from '@/assets/team/peterkim.png'
 import paigeImage from '@/assets/team/paige.jpg'
+import maxWongImage from '@/assets/team/maxwong.jpg'
 import shayeImage from '@/assets/team/shaye.jpg'
 
 // Map image filenames to imports
@@ -17,6 +18,7 @@ const imageMap: Record<string, string> = {
   'logan.png': loganImage,
   'peterkim.png': peterKimImage,
   'paige.jpg': paigeImage,
+  'maxwong.jpg': maxWongImage,
   'shaye.jpg': shayeImage,
 }
 
