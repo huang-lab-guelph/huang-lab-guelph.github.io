@@ -64,7 +64,7 @@ export default function Publications() {
             </a>
           </div>
         </div>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed font-serif">
           Peer-reviewed publications and book chapters from the Huang Lab and collaborators.
         </p>
       </div>
@@ -93,7 +93,7 @@ export default function Publications() {
                     {/* Publication Details */}
                     <div className="flex-1 min-w-0">
                       {/* Title */}
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                      <h3 className="text-lg text-gray-900 mb-2 leading-tight">
                         {pub.link ? (
                           <a
                             href={pub.link}
@@ -110,7 +110,7 @@ export default function Publications() {
                       </h3>
 
                       {/* Authors */}
-                      <p className="text-sm text-gray-700 mb-2">
+                      <p className="text-sm font-serif text-gray-700 mb-2">
                         {pub.authors}
                       </p>
 
@@ -155,7 +155,7 @@ export default function Publications() {
 
       {/* Footer Note */}
       <div className="mt-16 p-6 bg-gray-50 rounded-lg border border-gray-200">
-        <p className="text-sm text-gray-600 text-center">
+        <p className="text-sm text-gray-600 text-center font-serif">
           <strong>Note:</strong> Publications are listed in reverse chronological order.
           Click on titles to access full articles when available.
         </p>

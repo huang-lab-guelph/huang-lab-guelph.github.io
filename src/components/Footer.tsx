@@ -7,19 +7,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Lab Info */}
           <div>
-            <h3 className="text-xl font-serif font-bold text-primary mb-4">Huang's Lab</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <h3 className="text-xl font-bold text-primary mb-4">Huang's Lab</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed font-serif">
               Advanced NMR and Structural Biology Research
             </p>
-            <p className="text-sm text-muted-foreground mt-3 font-medium">
+            <p className="text-sm text-muted-foreground mt-3 font-medium font-serif">
               University of Guelph
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Contact</h3>
-            <address className="not-italic text-sm text-muted-foreground space-y-2 leading-relaxed">
+            <h3 className="text-lg text-foreground mb-4">Contact</h3>
+            <address className="not-italic text-sm text-muted-foreground space-y-2 leading-relaxed font-serif">
               <p>MacN-129, 43 Reynolds Walk</p>
               <p>Guelph, ON N1G 1Y4</p>
               <p className="mt-3">
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Social & Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Connect</h3>
+            <h3 className="text-lg text-foreground mb-4">Connect</h3>
             <div className="flex gap-3">
               <a
                 href="https://x.com/Ruihuangchem"
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t-2 border-border">
-          <p className="text-center text-sm text-muted-foreground">
+          <p className="text-center text-sm text-muted-foreground font-serif">
             © {new Date().getFullYear()} Huang's Lab, University of Guelph. All rights reserved.
           </p>
         </div>

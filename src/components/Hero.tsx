@@ -31,7 +31,7 @@ export default function Hero() {
             <p className="mt-6 text-2xl text-primary font-serif">
               Advanced NMR and Structural Biology Research
             </p>
-            <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-8 text-lg text-muted-foreground leading-relaxed font-serif">
               We study molecular mechanisms of protein complexes, particularly large protein assemblies,
               using advanced Nuclear Magnetic Resonance (NMR) techniques in combination with other
               structural biology tools such as cryo-Electron Microscopy and Mass Spectrometry.
@@ -79,10 +79,10 @@ export default function Hero() {
               className="group bg-card rounded-2xl p-6 shadow-organic border-2 border-border hover:border-primary/30 hover:shadow-organic-lg transition-all duration-300 hover:-translate-y-1"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-lg text-foreground mb-3 group-hover:text-primary transition-colors">
                 {focus.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{focus.description}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed font-serif">{focus.description}</p>
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ export default function Contact() {
       {/* Header */}
       <div className="mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
-        <p className="text-xl text-gray-600 leading-relaxed">
+        <p className="text-xl text-gray-600 leading-relaxed font-serif">
           Get in touch with our research group at the University of Guelph
         </p>
       </div>
@@ -22,8 +22,8 @@ export default function Contact() {
             </h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Dr. Rui Huang</h3>
-                <p className="text-gray-600 text-sm mb-2">Assistant Professor</p>
+                <h3 className="text-gray-900 mb-1">Dr. Rui Huang</h3>
+                <p className="text-gray-600 text-sm mb-2 font-serif">Assistant Professor</p>
                 <a
                   href="mailto:rhuang08@uoguelph.ca"
                   className="text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2"
@@ -45,10 +45,10 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <Building2 className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-900">MacN-129</p>
-                  <p className="text-gray-600">482 Gordon St</p>
-                  <p className="text-gray-600">Guelph, ON N1G 1Y4</p>
-                  <p className="text-gray-600">Canada</p>
+                  <p className="font-medium text-gray-900 font-serif">MacN-129</p>
+                  <p className="text-gray-600 font-serif">482 Gordon St</p>
+                  <p className="text-gray-600 font-serif">Guelph, ON N1G 1Y4</p>
+                  <p className="text-gray-600 font-serif">Canada</p>
                 </div>
               </div>
             </div>

@@ -22,8 +22,8 @@ export default function LabNews() {
     <div className="bg-background py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground sm:text-5xl font-serif mb-4">Lab News</h2>
-          <p className="mt-4 text-xl text-muted-foreground">
+          <h2 className="text-4xl font-bold text-foreground sm:text-5xl mb-4">Lab News</h2>
+          <p className="mt-4 text-xl text-muted-foreground font-serif">
             Latest updates and announcements from our lab
           </p>
         </div>
@@ -38,10 +38,10 @@ export default function LabNews() {
                 <Calendar className="h-4 w-4" />
                 <time dateTime={item.date}>{formatDate(item.date)}</time>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
+              <h3 className="text-xl text-foreground mb-4 group-hover:text-primary transition-colors">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed font-serif">
                 {item.content}
               </p>
             </div>
