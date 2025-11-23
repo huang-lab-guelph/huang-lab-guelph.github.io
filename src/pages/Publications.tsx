@@ -47,10 +47,10 @@ export default function Publications() {
       </div>
 
       {/* Publications by Year */}
-      <div className="space-y-12">
+      <div className="space-y-16">
         {years.map((year) => (
           <section key={year}>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-primary sticky top-0 bg-white z-10">
+            <h2 className="text-5xl font-bold text-gray-900 mb-8 pb-4 border-b-4 border-primary/20">
               {year}
             </h2>
             <div className="space-y-6">
