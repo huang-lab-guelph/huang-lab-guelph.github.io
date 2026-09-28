@@ -5,8 +5,8 @@ export default function Contact() {
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
-        <p className="text-xl text-gray-600 leading-relaxed font-serif">
+        <h1 className="text-4xl font-bold text-foreground mb-4">Contact Us</h1>
+        <p className="text-xl text-muted-foreground leading-relaxed font-serif">
           Get in touch with our research group at the University of Guelph
         </p>
       </div>
@@ -15,15 +15,15 @@ export default function Contact() {
         {/* Contact Information */}
         <div className="space-y-6">
           {/* Primary Contact */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <div className="bg-card rounded-xl shadow-md border border-border p-6">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Mail className="w-6 h-6 text-primary" />
               Primary Contact
             </h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-gray-900 mb-1">Dr. Rui Huang</h3>
-                <p className="text-gray-600 text-sm mb-2 font-serif">Assistant Professor</p>
+                <h3 className="text-foreground mb-1">Dr. Rui Huang</h3>
+                <p className="text-muted-foreground text-sm mb-2 font-serif">Assistant Professor</p>
                 <a
                   href="mailto:rhuang08@uoguelph.ca"
                   className="text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2"
@@ -36,59 +36,59 @@ export default function Contact() {
           </div>
 
           {/* Laboratory Location */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <div className="bg-card rounded-xl shadow-md border border-border p-6">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
               <MapPin className="w-6 h-6 text-primary" />
               Laboratory Location
             </h2>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <Building2 className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Building2 className="w-5 h-5 text-muted-foreground/60 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-900 font-serif">MacN-129</p>
-                  <p className="text-gray-600 font-serif">482 Gordon St</p>
-                  <p className="text-gray-600 font-serif">Guelph, ON N1G 1Y4</p>
-                  <p className="text-gray-600 font-serif">Canada</p>
+                  <p className="font-medium text-foreground font-serif">MacN-129</p>
+                  <p className="text-muted-foreground font-serif">482 Gordon St</p>
+                  <p className="text-muted-foreground font-serif">Guelph, ON N1G 1Y4</p>
+                  <p className="text-muted-foreground font-serif">Canada</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Office Location */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+          <div className="bg-card rounded-xl shadow-md border border-border p-6">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Building2 className="w-6 h-6 text-primary" />
               Office Location
             </h2>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <Building2 className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Building2 className="w-5 h-5 text-muted-foreground/60 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-gray-900">MacN-124</p>
-                  <p className="text-gray-600">482 Gordon St</p>
-                  <p className="text-gray-600">Guelph, ON N1G 1Y4</p>
-                  <p className="text-gray-600">Canada</p>
+                  <p className="font-medium text-foreground">MacN-124</p>
+                  <p className="text-muted-foreground">482 Gordon St</p>
+                  <p className="text-muted-foreground">Guelph, ON N1G 1Y4</p>
+                  <p className="text-muted-foreground">Canada</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Social Media & Professional Networks */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Connect With Us</h2>
+          <div className="bg-card rounded-xl shadow-md border border-border p-6">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Connect With Us</h2>
             <div className="space-y-4">
               <a
                 href="https://twitter.com/Ruihuangchem"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-                  <Twitter className="w-5 h-5 text-blue-500" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Twitter className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">Twitter</p>
-                  <p className="text-sm text-gray-600">@Ruihuangchem</p>
+                  <p className="text-sm text-muted-foreground">@Ruihuangchem</p>
                 </div>
               </a>
 
@@ -96,14 +96,14 @@ export default function Contact() {
                 href="https://linkedin.com/in/rui-huang-82108565/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-                  <Linkedin className="w-5 h-5 text-blue-700" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Linkedin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">LinkedIn</p>
-                  <p className="text-sm text-gray-600">Rui Huang</p>
+                  <p className="text-sm text-muted-foreground">Rui Huang</p>
                 </div>
               </a>
 
@@ -111,14 +111,14 @@ export default function Contact() {
                 href="https://researchgate.net/profile/Rui_Huang3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5 text-teal-600" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">ResearchGate</p>
-                  <p className="text-sm text-gray-600">Rui Huang</p>
+                  <p className="text-sm text-muted-foreground">Rui Huang</p>
                 </div>
               </a>
 
@@ -126,14 +126,14 @@ export default function Contact() {
                 href="https://scholar.google.com/citations?user=WqYyo04AAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">Google Scholar</p>
-                  <p className="text-sm text-gray-600">Rui Huang</p>
+                  <p className="text-sm text-muted-foreground">Rui Huang</p>
                 </div>
               </a>
 
@@ -141,14 +141,14 @@ export default function Contact() {
                 href="https://orcid.org/0000-0002-4064-6397"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center">
-                  <UserCircle className="w-5 h-5 text-green-600" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <UserCircle className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">ORCID</p>
-                  <p className="text-sm text-gray-600">0000-0002-4064-6397</p>
+                  <p className="text-sm text-muted-foreground">0000-0002-4064-6397</p>
                 </div>
               </a>
 
@@ -156,14 +156,14 @@ export default function Contact() {
                 href="https://github.com/huang-lab-guelph"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center">
-                  <Github className="w-5 h-5 text-gray-700" />
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Github className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">GitHub</p>
-                  <p className="text-sm text-gray-600">huang-lab-guelph</p>
+                  <p className="text-sm text-muted-foreground">huang-lab-guelph</p>
                 </div>
               </a>
             </div>
@@ -176,35 +176,35 @@ export default function Contact() {
           <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl shadow-md border-2 border-primary/20 p-8">
             <div className="flex items-center gap-3 mb-4">
               <Users className="w-8 h-8 text-primary" />
-              <h2 className="text-2xl font-bold text-gray-900">Join Our Lab</h2>
+              <h2 className="text-2xl font-bold text-foreground">Join Our Lab</h2>
             </div>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-muted-foreground leading-relaxed mb-6">
               We are actively recruiting <strong>motivated undergraduate and graduate students (MSc & PhD)</strong> interested in:
             </p>
             <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-gray-700">Protein Science</span>
+                <span className="text-muted-foreground">Protein Science</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-gray-700">Biomolecular NMR Spectroscopy</span>
+                <span className="text-muted-foreground">Biomolecular NMR Spectroscopy</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-gray-700">Structural Biology</span>
+                <span className="text-muted-foreground">Structural Biology</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-gray-700">Protein Dynamics</span>
+                <span className="text-muted-foreground">Protein Dynamics</span>
               </li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="text-muted-foreground mb-4">
               If you're interested in joining our research group, please contact Dr. Huang directly:
             </p>
             <a
               href="mailto:rhuang08@uoguelph.ca"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-md"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-md"
             >
               <Mail className="w-5 h-5" />
               Email Dr. Huang
@@ -212,9 +212,9 @@ export default function Contact() {
           </div>
 
           {/* Map */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
-            <div className="p-6 border-b border-gray-200">
-              <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+          <div className="bg-card rounded-xl shadow-md border border-border overflow-hidden">
+            <div className="p-6 border-b border-border">
+              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                 <MapPin className="w-6 h-6 text-primary" />
                 Find Us
               </h2>
@@ -234,9 +234,9 @@ export default function Contact() {
           </div>
 
           {/* Department Info */}
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">Department Information</h2>
-            <div className="space-y-2 text-gray-700">
+          <div className="bg-card rounded-xl shadow-md border border-border p-6">
+            <h2 className="text-xl font-bold text-foreground mb-4">Department Information</h2>
+            <div className="space-y-2 text-muted-foreground">
               <p className="font-medium">Department of Chemistry</p>
               <p>University of Guelph</p>
               <p>MacNaughton Building</p>

@@ -52,7 +52,7 @@ export default function LabNews() {
           <div className="text-center mt-12">
             <button
               onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all shadow-organic hover:shadow-organic-lg hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all shadow-organic hover:shadow-organic-lg hover:-translate-y-0.5"
             >
               Show More News ({news.length - 3} more)
               <ChevronDown className="h-5 w-5" />
@@ -64,7 +64,7 @@ export default function LabNews() {
           <div className="text-center mt-12">
             <button
               onClick={() => setShowAll(false)}
-              className="inline-flex items-center gap-2 bg-gray-200 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-300 transition-all"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-secondary/70 transition-all"
             >
               Show Less
               <ChevronDown className="h-5 w-5 rotate-180" />

@@ -23,9 +23,9 @@ export default function Publications() {
     if (!status) return null
 
     const colors: Record<'accepted' | 'submitted' | 'published', string> = {
-      accepted: 'bg-green-100 text-green-800 border-green-200',
-      submitted: 'bg-blue-100 text-blue-800 border-blue-200',
-      published: 'bg-gray-100 text-gray-800 border-gray-200',
+      accepted: 'bg-accent/40 text-accent-foreground border-accent/60',
+      submitted: 'bg-primary/15 text-foreground border-primary/30',
+      published: 'bg-muted text-muted-foreground border-border',
     }
 
     return (
@@ -40,13 +40,13 @@ export default function Publications() {
       {/* Header */}
       <div className="mb-12">
         <div className="flex items-start justify-between gap-4 mb-4">
-          <h1 className="text-4xl font-bold text-gray-900">Publications</h1>
+          <h1 className="text-4xl font-bold text-foreground">Publications</h1>
           <div className="flex gap-3">
             <a
               href="https://scholar.google.com/citations?user=WqYyo04AAAAJ&hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg"
             >
               <GraduationCap className="w-5 h-5" />
               <span className="font-medium">Google Scholar</span>
@@ -56,7 +56,7 @@ export default function Publications() {
               href="https://orcid.org/0000-0002-4064-6397"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/70 transition-colors shadow-md hover:shadow-lg"
             >
               <UserCircle className="w-5 h-5" />
               <span className="font-medium">ORCID</span>
@@ -64,7 +64,7 @@ export default function Publications() {
             </a>
           </div>
         </div>
-        <p className="text-lg text-gray-600 leading-relaxed font-serif">
+        <p className="text-lg text-muted-foreground leading-relaxed font-serif">
           Peer-reviewed publications and book chapters from the Huang Lab and collaborators.
         </p>
       </div>
@@ -73,14 +73,14 @@ export default function Publications() {
       <div className="space-y-16">
         {years.map((year) => (
           <section key={year}>
-            <h2 className="text-5xl font-bold text-gray-900 mb-8 pb-4 border-b-4 border-primary/20">
+            <h2 className="text-5xl font-bold text-foreground mb-8 pb-4 border-b-4 border-primary/20">
               {year}
             </h2>
             <div className="space-y-6">
               {publicationsByYear[year].map((pub) => (
                 <article
                   key={pub.id}
-                  className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-200"
+                  className="bg-card rounded-lg shadow-md border border-border p-6 hover:shadow-lg transition-shadow duration-200"
                 >
                   <div className="flex items-start gap-4">
                     {/* Publication Number */}
@@ -93,7 +93,7 @@ export default function Publications() {
                     {/* Publication Details */}
                     <div className="flex-1 min-w-0">
                       {/* Title */}
-                      <h3 className="text-lg text-gray-900 mb-2 leading-tight">
+                      <h3 className="text-lg text-foreground mb-2 leading-tight">
                         {pub.link ? (
                           <a
                             href={pub.link}
@@ -110,29 +110,29 @@ export default function Publications() {
                       </h3>
 
                       {/* Authors */}
-                      <p className="text-sm font-serif text-gray-700 mb-2">
+                      <p className="text-sm font-serif text-foreground mb-2">
                         {pub.authors}
                       </p>
 
                       {/* Journal Info */}
-                      <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+                      <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                         <FileText className="w-4 h-4" />
                         <span className="font-medium italic">{pub.journal}</span>
                         {pub.volume && (
                           <>
-                            <span className="text-gray-400">•</span>
+                            <span className="text-muted-foreground/60">•</span>
                             <span>{pub.volume}</span>
                           </>
                         )}
                         {pub.pages && (
                           <>
-                            <span className="text-gray-400">:</span>
+                            <span className="text-muted-foreground/60">:</span>
                             <span>{pub.pages}</span>
                           </>
                         )}
                         {pub.month && (
                           <>
-                            <span className="text-gray-400">•</span>
+                            <span className="text-muted-foreground/60">•</span>
                             <span>{pub.month} {pub.year}</span>
                           </>
                         )}
@@ -154,8 +154,8 @@ export default function Publications() {
       </div>
 
       {/* Footer Note */}
-      <div className="mt-16 p-6 bg-gray-50 rounded-lg border border-gray-200">
-        <p className="text-sm text-gray-600 text-center font-serif">
+      <div className="mt-16 p-6 bg-muted rounded-lg border border-border">
+        <p className="text-sm text-muted-foreground text-center font-serif">
           <strong>Note:</strong> Publications are listed in reverse chronological order.
           Click on titles to access full articles when available.
         </p>

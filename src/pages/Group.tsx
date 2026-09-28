@@ -61,22 +61,22 @@ export default function Group() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <h1 className="text-4xl font-bold text-foreground mb-4">Our Team</h1>
+          <p className="text-xl text-muted-foreground leading-relaxed">
             Meet the talented researchers driving innovation in structural biology and NMR spectroscopy
           </p>
         </div>
 
       {/* Group Leader */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary">
+        <h2 className="text-3xl font-bold text-foreground mb-8 pb-2 border-b-2 border-primary">
           Group Leader
         </h2>
         <div className="grid grid-cols-1 gap-8">
           {leader.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
               onClick={() => handleMemberClick(member)}
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
@@ -90,7 +90,7 @@ export default function Group() {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <User className="w-24 h-24 text-gray-400" />
+                      <User className="w-24 h-24 text-muted-foreground/60" />
                     )}
                   </div>
                 </div>
@@ -98,16 +98,16 @@ export default function Group() {
                 {/* Content */}
                 <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">{member.name}</h3>
+                    <h3 className="text-2xl font-bold text-foreground">{member.name}</h3>
                     <p className="text-lg text-primary font-semibold">{member.role}</p>
                   </div>
 
-                  <p className="text-gray-600">{member.bio}</p>
+                  <p className="text-muted-foreground">{member.bio}</p>
 
                   {member.education && member.education.length > 0 && (
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Education</h4>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600">
+                      <h4 className="font-semibold text-foreground mb-2">Education</h4>
+                      <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                         {member.education.map((edu, idx) => (
                           <li key={idx}>{edu}</li>
                         ))}
@@ -123,14 +123,14 @@ export default function Group() {
 
       {/* Graduate Students */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary">
+        <h2 className="text-3xl font-bold text-foreground mb-8 pb-2 border-b-2 border-primary">
           Graduate Students
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {graduates.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              className="bg-card rounded-xl shadow-md border border-border overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               onClick={() => handleMemberClick(member)}
             >
               {/* Image */}
@@ -142,28 +142,28 @@ export default function Group() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <User className="w-20 h-20 text-gray-400" />
+                  <User className="w-20 h-20 text-muted-foreground/60" />
                 )}
               </div>
 
               {/* Content */}
               <div className="p-6 space-y-3">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
+                  <h3 className="text-xl font-bold text-foreground">{member.name}</h3>
                   <p className="text-sm text-primary font-semibold">{member.role}</p>
                   {member.startYear && (
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-muted-foreground">
                       {member.startYear}-current
                     </p>
                   )}
                 </div>
 
-                <p className="text-sm text-gray-600">{member.bio}</p>
+                <p className="text-sm text-muted-foreground">{member.bio}</p>
 
                 {member.research && (
-                  <div className="pt-2 border-t border-gray-100">
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">Research Focus</h4>
-                    <p className="text-sm text-gray-600 leading-relaxed">{member.research}</p>
+                  <div className="pt-2 border-t border-border">
+                    <h4 className="text-sm font-semibold text-foreground mb-1">Research Focus</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{member.research}</p>
                   </div>
                 )}
               </div>
@@ -174,14 +174,14 @@ export default function Group() {
 
       {/* Undergraduate Students */}
       <section>
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary">
+        <h2 className="text-3xl font-bold text-foreground mb-8 pb-2 border-b-2 border-primary">
           Undergraduate Students
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {undergrads.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              className="bg-card rounded-xl shadow-md border border-border overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               onClick={() => handleMemberClick(member)}
             >
               {/* Image */}
@@ -193,13 +193,13 @@ export default function Group() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <User className="w-16 h-16 text-gray-400" />
+                  <User className="w-16 h-16 text-muted-foreground/60" />
                 )}
               </div>
 
               {/* Content */}
               <div className="p-4 text-center">
-                <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
+                <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
                 <p className="text-xs text-primary font-semibold mt-1">{member.role}</p>
               </div>
             </div>
@@ -209,21 +209,21 @@ export default function Group() {
 
       {/* Alumni */}
       <section className="mt-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b-2 border-primary">
+        <h2 className="text-3xl font-bold text-foreground mb-8 pb-2 border-b-2 border-primary">
           Alumni
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {alumni.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow duration-200"
+              className="bg-card rounded-lg shadow-sm border border-border p-4 hover:shadow-md transition-shadow duration-200"
             >
-              <h3 className="font-semibold text-gray-900">{member.name}</h3>
+              <h3 className="font-semibold text-foreground">{member.name}</h3>
               {member.degree && (
-                <p className="text-sm text-gray-600 mt-1">{member.degree}</p>
+                <p className="text-sm text-muted-foreground mt-1">{member.degree}</p>
               )}
               {member.bio && (
-                <p className="text-xs text-gray-500 mt-1">{member.bio}</p>
+                <p className="text-xs text-muted-foreground mt-1">{member.bio}</p>
               )}
               {member.currentPosition && (
                 <p className="text-sm text-primary mt-2">{member.currentPosition}</p>

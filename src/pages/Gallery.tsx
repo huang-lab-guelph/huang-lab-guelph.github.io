@@ -52,9 +52,9 @@ export default function Gallery() {
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-4">
           <Images className="w-10 h-10 text-primary" />
-          <h1 className="text-4xl font-bold text-gray-900">Gallery</h1>
+          <h1 className="text-4xl font-bold text-foreground">Gallery</h1>
         </div>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed">
           Photos from lab events, conferences, and team activities
         </p>
       </div>
@@ -65,10 +65,10 @@ export default function Gallery() {
           <section key={collection.id} id={collection.slug}>
             {/* Collection Header */}
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <h2 className="text-3xl font-bold text-foreground mb-3">
                 {collection.title}
               </h2>
-              <p className="text-gray-600">{collection.description}</p>
+              <p className="text-muted-foreground">{collection.description}</p>
             </div>
 
             {/* Image Grid */}
@@ -76,7 +76,7 @@ export default function Gallery() {
               {collection.images.map((image) => (
                 <div
                   key={image.id}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100 cursor-pointer shadow-md hover:shadow-xl transition-all duration-300"
+                  className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-muted cursor-pointer shadow-md hover:shadow-xl transition-all duration-300"
                   onClick={() => openLightbox(image, collection)}
                 >
                   <img
@@ -177,8 +177,8 @@ export default function Gallery() {
       )}
 
       {/* Instructions */}
-      <div className="mt-16 p-6 bg-gray-50 rounded-lg border border-gray-200">
-        <p className="text-sm text-gray-600 text-center">
+      <div className="mt-16 p-6 bg-muted rounded-lg border border-border">
+        <p className="text-sm text-muted-foreground text-center">
           <strong>Tip:</strong> Click on any image to view it in full size. Use arrow keys or
           navigation buttons to browse through photos.
         </p>
