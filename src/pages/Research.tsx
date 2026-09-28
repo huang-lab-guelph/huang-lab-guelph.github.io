@@ -5,8 +5,8 @@ export default function Research() {
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Research</h1>
-        <p className="text-xl text-gray-700 leading-relaxed">
+        <h1 className="text-4xl font-bold text-foreground mb-4">Research</h1>
+        <p className="text-xl text-muted-foreground leading-relaxed">
           We investigate the <strong>structure and dynamics of biomacromolecules</strong> and
           how these properties <strong>dictate their functions</strong>. Our group specializes
           in understanding protein complexes through structural characterization and dynamic
@@ -28,10 +28,10 @@ export default function Research() {
       <div className="space-y-12">
         {/* Mitochondrial AAA Proteases */}
         <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             Mitochondrial AAA Proteases
           </h2>
-          <div className="text-gray-600 leading-relaxed space-y-4">
+          <div className="text-muted-foreground leading-relaxed space-y-4">
             <p>
               We examine protein degradation machinery in mitochondria, specifically two AAA
               proteases (<strong>i-AAA</strong> and <strong>m-AAA</strong>) that operate on
@@ -49,10 +49,10 @@ export default function Research() {
 
         {/* AAA+ ATPases */}
         <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             AAA+ ATPases
           </h2>
-          <div className="text-gray-600 leading-relaxed space-y-4">
+          <div className="text-muted-foreground leading-relaxed space-y-4">
             <p>
               The laboratory studies this versatile class of molecular machines that convert
               ATP energy into mechanical forces for substrate remodeling. Current investigations
@@ -68,11 +68,11 @@ export default function Research() {
         </section>
 
         {/* Methodological Approach */}
-        <section className="bg-gray-50 rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <section className="bg-muted rounded-lg p-8">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             Methodological Approach
           </h2>
-          <div className="text-gray-600 leading-relaxed space-y-4">
+          <div className="text-muted-foreground leading-relaxed space-y-4">
             <p>
               We employ advanced <strong>Nuclear Magnetic Resonance (NMR) spectroscopy</strong> as
               our primary technique, combined with complementary biophysical and biochemical methods.
@@ -90,10 +90,10 @@ export default function Research() {
 
         {/* Broader Goals */}
         <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
             Broader Goals
           </h2>
-          <div className="text-gray-600 leading-relaxed">
+          <div className="text-muted-foreground leading-relaxed">
             <p>
               Our lab aims to clarify disease mechanisms caused by protein mutations and develop
               therapeutic intervention strategies targeting these molecular assemblies. By
