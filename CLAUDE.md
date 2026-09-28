@@ -1,198 +1,192 @@
 # Huang Lab Website - Project Documentation
 
 ## Overview
-Modern academic website for Huang Lab at the University of Guelph, showcasing advanced NMR and structural biology research.
+Public website for the Huang Lab at the University of Guelph (advanced NMR and structural biology research). Static single-page app, deployed to GitHub Pages.
 
 ## Tech Stack
 - **Framework**: React 18 with TypeScript
 - **Build Tool**: Vite 5
-- **Styling**: Tailwind CSS 3
-- **UI Components**: Shadcn UI patterns
-- **Routing**: React Router 6 (HashRouter for GitHub Pages compatibility)
+- **Styling**: Tailwind CSS 3, with shadcn-style HSL design tokens in `src/index.css`
+- **Icons**: lucide-react
+- **Routing**: React Router 6 (HashRouter, for GitHub Pages compatibility)
 - **Hosting**: GitHub Pages
-- **CI/CD**: GitHub Actions
+- **CI/CD**: GitHub Actions (`.github/workflows/deploy.yml`)
+
+No test framework is configured. The only quality gates are `npm run build` (runs `tsc` then `vite build`) and `npm run lint` (flat-config ESLint, `--max-warnings 0`).
 
 ## Project Structure
 ```
 huang-lab-guelph.github.io/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # Automated deployment to GitHub Pages
+├── .github/workflows/deploy.yml   # Build + deploy to GitHub Pages
 ├── src/
-│   ├── components/             # Reusable UI components
-│   │   ├── Header.tsx          # Main navigation
-│   │   ├── Footer.tsx          # Site footer
-│   │   ├── Hero.tsx            # Homepage hero section
-│   │   └── LabNews.tsx         # News feed component
+│   ├── components/
+│   │   ├── Header.tsx             # Sticky nav, mobile menu, nav array
+│   │   ├── Footer.tsx             # Site footer
+│   │   ├── Hero.tsx               # Homepage hero
+│   │   ├── LabNews.tsx            # News feed, reads news.json
+│   │   └── TeamMemberModal.tsx    # Team member detail modal
 │   ├── layouts/
-│   │   └── Layout.tsx          # Main page layout wrapper
-│   ├── pages/                  # Route page components
-│   │   ├── Home.tsx
+│   │   └── Layout.tsx             # Header + main + Footer wrapper
+│   ├── pages/
+│   │   ├── Home.tsx               # Hero + LabNews only
 │   │   ├── Research.tsx
 │   │   ├── Group.tsx
 │   │   ├── Publications.tsx
+│   │   ├── Teaching.tsx
 │   │   ├── Gallery.tsx
 │   │   ├── Contact.tsx
-│   │   └── UsefulLinks.tsx
-│   ├── data/                   # JSON data files
-│   │   └── news.json           # Lab news/updates
-│   ├── types/
-│   │   └── index.ts            # TypeScript type definitions
-│   ├── lib/
-│   │   └── utils.ts            # Utility functions
-│   ├── hooks/                  # Custom React hooks (future)
-│   ├── assets/                 # Images, icons, etc. (future)
-│   ├── App.tsx                 # Main app component with routing
-│   ├── main.tsx                # React entry point
-│   └── index.css               # Global styles + Tailwind directives
-├── public/                     # Static assets
-├── index.html                  # HTML entry point
-├── vite.config.ts              # Vite configuration
-├── tailwind.config.js          # Tailwind configuration
-├── tsconfig.json               # TypeScript configuration
-└── package.json                # Dependencies and scripts
+│   │   └── LabBuddy.tsx
+│   ├── data/                      # JSON content
+│   │   ├── news.json
+│   │   ├── team.json
+│   │   ├── publications.json
+│   │   └── gallery.json
+│   ├── types/index.ts             # Shared TypeScript interfaces
+│   ├── lib/utils.ts               # `cn()` (clsx + tailwind-merge), currently unused
+│   ├── hooks/                     # Empty
+│   ├── assets/                    # team/ and research/ images (hero/, icons/ empty)
+│   ├── App.tsx                    # HashRouter + route table
+│   ├── main.tsx                   # React entry, imports index.css
+│   ├── index.css                  # Tailwind directives, design tokens, utilities
+│   └── App.css                    # Unused Vite template leftover, not imported
+├── public/images/gallery/         # Gallery photos, one folder per collection
+├── index.html                     # HTML entry, loads Crimson Pro from Google Fonts
+├── vite.config.ts                 # base '/', `@` alias -> ./src
+├── tailwind.config.js             # Maps the CSS custom properties to Tailwind colors
+└── package.json
 ```
+
+## Routes
+Defined in `src/App.tsx`, mirrored by the `navigation` array in `src/components/Header.tsx`. HashRouter, so real URLs are `/#/research` etc.
+
+| Path | Page |
+| --- | --- |
+| `/` | Home |
+| `/research` | Research |
+| `/group` | Group |
+| `/publications` | Publications |
+| `/teaching` | Teaching |
+| `/gallery` | Gallery |
+| `/contact` | Contact |
+| `/labbuddy` | LabBuddy |
+
+Adding a route means editing both `App.tsx` and the `navigation` array in `Header.tsx`.
 
 ## Design System
 
-### Color Palette
-- **Primary**: Blue (#3b82f6) - Used for CTAs, links, emphasis
-- **Background**: White with subtle gray gradients
-- **Text**: Gray-900 for headings, Gray-600 for body
-- **Borders**: Gray-200 for subtle separation
-- **Academic-but-fresh**: Clean, modern, professional yet approachable
+The site uses a watercolor-inspired palette: a warm cream canvas with a teal primary and a soft botanical-green accent. It is **not** blue.
+
+### Design tokens
+All colors are HSL triples declared as CSS custom properties on `:root` in `src/index.css`, and exposed as Tailwind colors in `tailwind.config.js`. Use the Tailwind token (`bg-primary`, `text-foreground`, `border-border`) or `hsl(var(--primary))` in raw CSS. Do not hardcode hex values.
+
+| Token | Value | Role |
+| --- | --- | --- |
+| `--background` | `45 60% 95%` | Warm cream page canvas |
+| `--foreground` | `180 30% 25%` | Deep teal body text |
+| `--card` | `45 50% 98%` | Near-white warm card surface |
+| `--card-foreground` | `180 30% 25%` | Text on cards |
+| `--popover` | `45 50% 98%` | Popover surface |
+| `--popover-foreground` | `180 30% 25%` | Text on popovers |
+| `--primary` | `180 45% 45%` | Teal - CTAs, links, emphasis |
+| `--primary-foreground` | `45 60% 98%` | Text on primary |
+| `--secondary` | `45 65% 88%` | Soft yellow/cream |
+| `--secondary-foreground` | `180 30% 25%` | Text on secondary |
+| `--muted` | `45 40% 90%` | Muted cream surface |
+| `--muted-foreground` | `180 20% 45%` | Secondary text |
+| `--accent` | `150 35% 70%` | Botanical green |
+| `--accent-foreground` | `180 30% 20%` | Text on accent |
+| `--destructive` | `0 70% 55%` | Errors, destructive actions |
+| `--destructive-foreground` | `45 60% 98%` | Text on destructive |
+| `--border` | `45 30% 85%` | Borders (also the global `*` border color) |
+| `--input` | `45 30% 88%` | Input borders |
+| `--ring` | `180 45% 45%` | Focus ring (same teal as primary) |
+| `--radius` | `0.75rem` | Base radius; Tailwind `rounded-lg/md/sm` derive from it |
+
+There is no dark mode: the tokens are defined once on `:root`, with no `.dark` block and no `darkMode` setting in the Tailwind config.
+
+### Custom utilities
+Defined in the `@layer utilities` block of `src/index.css`:
+- `.bg-watercolor-teal`, `.bg-watercolor-cream` - gradient washes (currently used only by `Hero.tsx`)
+- `.shadow-organic`, `.shadow-organic-lg` - soft teal-tinted elevation shadows, used in place of Tailwind's default shadows
 
 ### Typography
-- **Headings**: Bold, clear hierarchy (4xl, 3xl, 2xl, xl, lg)
-- **Body**: Readable, relaxed line-height for academic content
-- **Font Stack**: System fonts for performance
+- **Body**: system font stack, set on `body` in `src/index.css` (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`).
+- **Headings**: `h1`-`h6` are set in `"Crimson Pro", Georgia, "Times New Roman", serif` at weight 600 with `-0.02em` letter-spacing, via a base-layer rule in `src/index.css`. Crimson Pro is loaded from Google Fonts in `index.html`.
+- `font-serif` in Tailwind is remapped to the same Crimson Pro stack, for serif text outside heading tags.
 
-### Components
-All components follow these principles:
-- Responsive design (mobile-first approach)
-- Accessible (semantic HTML, ARIA labels)
-- Consistent spacing using Tailwind's spacing scale
-- Hover states for interactive elements
-- Shadow on elevation for depth
+### Known inconsistency: tokens vs hardcoded Tailwind colors
+The codebase is midway through the watercolor redesign. Some files use the design tokens throughout; others still carry Tailwind's default greys and `bg-white` from before the redesign, and a few mix both.
 
-## Key Features Implemented
+- Token-based: `Header.tsx`, `Footer.tsx`, `Hero.tsx`, `LabBuddy.tsx`, `Layout.tsx`
+- Substantially hardcoded (`bg-white`, `text-gray-*`, `border-gray-*`): `Contact.tsx`, `Research.tsx`, `Teaching.tsx`, `Group.tsx`, `Publications.tsx`, `Gallery.tsx`, `TeamMemberModal.tsx`
 
-### Phase 1 (Current)
-✅ Project foundation with Vite + React + TypeScript
-✅ Tailwind CSS configuration with custom design tokens
-✅ Modular component structure
-✅ HashRouter setup for GitHub Pages compatibility
-✅ Responsive header with mobile menu
-✅ Footer with contact info and social links
-✅ Homepage with hero section and research focus areas
-✅ Lab news section with JSON data source
-✅ Type-safe data structures
-✅ GitHub Actions deployment workflow
+New code should use the tokens. Converting the hardcoded pages is a wanted but unscheduled cleanup; it is a visual change, so do it deliberately rather than as a drive-by edit.
 
-### Pages Structure
-- **Home**: Hero + Research focus + Lab news
-- **Research**: TBD - Research areas, methodologies
-- **Group**: TBD - Team members, roles, bios
-- **Publications**: TBD - List of papers, citations
-- **Gallery**: TBD - Lab photos, research images
-- **Contact**: TBD - Contact form, location map
-- **Useful Links**: TBD - Resources, collaborators
+### Component conventions
+- Responsive, mobile-first
+- Semantic HTML and ARIA labels on icon-only or decorative elements
+- Tailwind spacing scale, no ad-hoc pixel values
+- Hover and focus states on anything interactive
+- `shadow-organic` rather than Tailwind's default shadows
 
 ## Data Management
 
-### Content Files (JSON)
-Content is stored in JSON files under `src/data/` for easy updates:
-- `news.json` - Lab news and announcements
-- Future: `team.json`, `publications.json`, `research.json`
+Content lives in JSON under `src/data/` and is imported directly by the components; there is no CMS and no fetch at runtime.
 
-### Type Safety
-All data structures have corresponding TypeScript interfaces in `src/types/index.ts`:
-- `NewsItem` - Lab news entries
-- `TeamMember` - Lab member profiles
-- `Publication` - Research publications
-- `ResearchArea` - Research focus areas
+| File | Shape | Consumed by |
+| --- | --- | --- |
+| `news.json` | `NewsItem[]` | `LabNews.tsx` |
+| `team.json` | `TeamMember[]` | `Group.tsx` |
+| `publications.json` | `Publication[]` | `Publications.tsx` |
+| `gallery.json` | `GalleryCollection[]` | `Gallery.tsx` |
+
+Interfaces are in `src/types/index.ts`: `NewsItem`, `TeamMember`, `Publication`, `ResearchArea`, `GalleryImage`, `GalleryCollection`. `ResearchArea` is declared but not currently used by any page.
+
+Team photos live in `src/assets/team/` and are bundled by Vite. `team.json` stores only a bare filename in `image`; `Group.tsx` resolves it through an explicit `imageMap` of static imports, so adding a team member means adding both the JSON entry and an import plus `imageMap` line in `Group.tsx`.
+
+Gallery photos live in `public/images/gallery/<collection>/` and are referenced by absolute path from `gallery.json`, so they are copied verbatim and not hashed. See `public/images/gallery/README.md` and `src/assets/README.md` for the per-folder conventions.
+
+There is no shadcn component library in the repo - only the shadcn token naming convention. `class-variance-authority` is a dependency but is not imported anywhere, and `cn()` in `src/lib/utils.ts` has no call sites yet.
 
 ## Deployment
 
-### GitHub Pages Setup
-1. Repository: `huang-lab-guelph.github.io`
-2. Branch: `main` (source code)
-3. Deploy target: GitHub Pages via Actions
-4. URL: `https://huang-lab-guelph.github.io/`
-
-### Deployment Process
-1. Push to `main` branch triggers GitHub Actions workflow
-2. Workflow installs dependencies, builds project, and deploys to GitHub Pages
-3. Vite builds with base path `/` (root) since this is a user/org GitHub Pages site
-4. Built files served from `gh-pages` branch (auto-managed)
+- Repository: `huang-lab-guelph/huang-lab-guelph.github.io`, source on `main`.
+- Live URL: `https://huang-lab-guelph.github.io/`
+- Pushing to `main` (or a manual `workflow_dispatch`) runs `.github/workflows/deploy.yml`: Node 18, `npm ci`, `npm run build`, then `actions/upload-pages-artifact` on `dist/` and `actions/deploy-pages`. There is no `gh-pages` branch; the artifact is deployed straight to Pages.
+- Vite builds with `base: '/'` because this is an org Pages site served from the domain root.
 
 ### Local Development
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+npm run dev      # dev server on http://localhost:5173
+npm run build    # tsc + vite build
+npm run preview  # serve the production build
+npm run lint     # eslint, zero warnings tolerated
 ```
-
-## Next Steps (Future Phases)
-
-### Phase 2: Content Population
-- [ ] Add real lab news from current website
-- [ ] Create team member data and profiles
-- [ ] Populate research areas with details
-- [ ] Add publications data
-
-### Phase 3: Advanced Features
-- [ ] Image gallery with lightbox
-- [ ] Publication search and filtering
-- [ ] Contact form with validation
-- [ ] Animations and transitions
-- [ ] SEO optimization
-- [ ] Analytics integration
-
-### Phase 4: Enhanced UX
-- [ ] Dark mode support
-- [ ] Accessibility audit and improvements
-- [ ] Performance optimization
-- [ ] Progressive Web App features
 
 ## Notes
 
 ### HashRouter vs BrowserRouter
-Using HashRouter because GitHub Pages doesn't support client-side routing with BrowserRouter. URLs will have `#/` (e.g., `/#/research`), which is acceptable for an academic lab website.
+HashRouter is used because GitHub Pages cannot rewrite deep links to `index.html`. URLs therefore contain `#/`, which is acceptable here.
 
-### Asset Handling
-All assets (images, icons) should be placed in `src/assets/` or `public/` depending on whether they need to be processed by Vite.
+### Asset handling
+Images that should be hashed and bundled go in `src/assets/` and are imported. Images referenced by string path at runtime (the gallery) go in `public/`.
 
-### Content Updates
-Non-technical users can update content by editing JSON files in `src/data/`. Changes require a git commit and push to deploy.
+### Content updates
+Non-technical contributors can edit the JSON files in `src/data/`. Changes must match the interfaces in `src/types/index.ts` or `npm run build` fails. A commit to `main` deploys.
 
 ## Maintenance
 
-### Adding a New Page
-1. Create component in `src/pages/NewPage.tsx`
-2. Add route in `src/App.tsx`
-3. Add navigation link in `src/components/Header.tsx`
+### Adding a page
+1. Create `src/pages/NewPage.tsx`
+2. Add the route in `src/App.tsx`
+3. Add an entry to the `navigation` array in `src/components/Header.tsx`
 
-### Adding a New Component
-1. Create component file in `src/components/ComponentName.tsx`
-2. Export and import where needed
-3. Follow existing patterns for styling and structure
-
-### Updating Content
-1. Edit relevant JSON file in `src/data/`
-2. Ensure data matches TypeScript interface
-3. Commit and push to trigger deployment
+### Adding a component
+1. Create `src/components/ComponentName.tsx`
+2. Style with the design tokens and `shadow-organic`, matching `Header.tsx` or `Hero.tsx`
 
 ## Resources
-- [Vite Documentation](https://vitejs.dev/)
-- [React Router Documentation](https://reactrouter.com/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/)
-- [Shadcn UI Components](https://ui.shadcn.com/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)

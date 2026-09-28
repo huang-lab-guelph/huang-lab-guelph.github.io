@@ -6,8 +6,7 @@ Modern website for Huang Lab at the University of Guelph - Advanced NMR and Stru
 
 - **React 18** with TypeScript
 - **Vite 5** for fast development and optimized builds
-- **Tailwind CSS 3** for styling
-- **Shadcn UI** patterns
+- **Tailwind CSS 3** for styling, with shadcn-style HSL design tokens in `src/index.css`
 - **React Router 6** with HashRouter
 - **GitHub Pages** for hosting
 - **GitHub Actions** for automated deployment
@@ -52,8 +51,8 @@ src/
 ├── data/           # JSON content files
 ├── types/          # TypeScript type definitions
 ├── lib/            # Utility functions
-├── hooks/          # Custom React hooks
-└── assets/         # Static assets
+├── hooks/          # Custom React hooks (empty)
+└── assets/         # Bundled images (team, research)
 ```
 
 ## Deployment
@@ -67,7 +66,9 @@ The site automatically deploys to GitHub Pages when changes are pushed to the `m
 Content is managed through JSON files in the `src/data/` directory:
 
 - `news.json` - Lab news and announcements
-- More to come: team members, publications, research areas
+- `team.json` - Lab members and alumni
+- `publications.json` - Publication list
+- `gallery.json` - Photo collections (images live in `public/images/gallery/`)
 
 ## Contributing
 
