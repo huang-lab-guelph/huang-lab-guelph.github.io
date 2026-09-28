@@ -7,6 +7,7 @@ import Publications from './pages/Publications'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Teaching from './pages/Teaching'
+import LabBuddy from './pages/LabBuddy'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/labbuddy" element={<LabBuddy />} />
         </Routes>
       </Layout>
     </Router>
